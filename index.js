@@ -26,20 +26,3 @@ bot.on('text', function (msg) {     //msg - Объект, который воз�
 
 });
 
-
-
-
-
-
-
-
-/*
-const Telegraf = require('telegraf');
-const app = new Telegraf('756950534:AAEIZHfD-ejbXkvOdNqRcRBPIbQnlHFKs7Y');
-
-app.hears('hi', ctx => {
-    return ctx.reply('Hey!');
-});
-
-app.startPolling();
-*/
