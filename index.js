@@ -26,22 +26,28 @@ bot.on('text', function (msg) {     //msg - Объект, который воз�
 
   var messageText = msg.text;
 
-   if ((messageText ==='Го') || (messageText ==='го')) {
+  if ((messageText ==='Го') || (messageText ==='го')) {
 
      bot.sendMessage(messageChatId, 'Вам кого?', optQuestion1);
 
      bot.sendPhoto(messageChatId, urlPhoto);
-   }
+  }
 
 });
 
 bot.on('callback_query', function (msg) {
+
+
     if (msg.data === 'you') {
         console.log("YOU");
+        answer1 = "YOU";
     }
 
     if (msg.data === "nobody") {
         console.log("NOBODY");
+        answer1 = "NOBODY";
     }
+
+    bot.sendMessage(msg.from.id, answer1);
     
 });
