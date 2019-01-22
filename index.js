@@ -1,4 +1,3 @@
-
 process.env["NTBA_FIX_319"] = 1;
 
 var TelegramBot = require('node-telegram-bot-api');
@@ -11,13 +10,13 @@ var bot = new TelegramBot(TOKEN, {polling: true }); // Создаём экзем
 const urlPhoto = "https://memepedia.ru/wp-content/uploads/2016/08/fdKZ-ZpN7iw.jpg";
 
 bot.on('text', function (msg) {     //msg - Объект, который возвращает этот метод, когда приходит сообщение,
-	//посмотрите через консоль из чего он состоит. Далее получим id чата, чтобы разделять написавших и само сообщение
+	//посмотрите через консоль из чего он состоит.
 
   var messageChatId = msg.chat.id;
 
   var messageText = msg.text;
 
-   if (messageText === 'Го' || 'го') {
+   if ((messageText =='Го') || (messageText =='го')) {
 
      bot.sendMessage(messageChatId, 'Вам кого?');
 
