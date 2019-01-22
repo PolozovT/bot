@@ -16,7 +16,7 @@ bot.on('text', function (msg) {     //msg - Объект, который воз�
 
   var messageText = msg.text;
 
-   if ((messageText =='Го') || (messageText =='го')) {
+   if ((messageText === 'Го') || (messageText === 'го')) {
 
      bot.sendMessage(messageChatId, 'Вам кого?');
 
