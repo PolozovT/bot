@@ -42,6 +42,6 @@ bot.on('callback_query', function (msg) {
 
     if (msg.data === "nobody") {
         console.log("NOBODY");
-    };
+    }
     
 });
