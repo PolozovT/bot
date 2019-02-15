@@ -4,7 +4,7 @@ var TelegramBot = require('node-telegram-bot-api');
 
 var Twit = require('twit');
 
-var TOKEN = '756950534:AAEIZHfD-ejbXkvOdNqRcRBPIbQnlHFKs7Y';
+var TOKEN = '';
 
 var bot = new TelegramBot(TOKEN, {polling: true });
 /*
